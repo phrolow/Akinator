@@ -1,0 +1,20 @@
+digraph structs {
+	node [color=black, shape=box, style="filled"];
+	node0 [fillcolor="#DAA520", label="ass"];
+	edge [color="#3CB371"]; node0 -> node1;
+	node1 [fillcolor="#368A8A", label="a"];
+	edge [color="#CD5C5C"]; node0 -> node2;
+	node2 [fillcolor="#90EE90", label="b"];
+	edge [color="#3CB371"]; node2 -> node3;
+	node3 [fillcolor="#368A8A", label="c"];
+	edge [color="#CD5C5C"]; node2 -> node4;
+	node4 [fillcolor="#90EE90", label="hz"];
+	edge [color="#3CB371"]; node4 -> node5;
+	node5 [fillcolor="#368A8A", label="d"];
+	edge [color="#CD5C5C"]; node4 -> node6;
+	node6 [fillcolor="#90EE90", label="hui"];
+	edge [color="#3CB371"]; node6 -> node7;
+	node7 [fillcolor="#368A8A", label="Shustik"];
+	edge [color="#CD5C5C"]; node6 -> node8;
+	node8 [fillcolor="#368A8A", label="mamka"];
+}

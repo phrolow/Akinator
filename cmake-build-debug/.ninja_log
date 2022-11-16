@@ -1,0 +1,10 @@
+# ninja log v5
+13	187	6899199080250906	CMakeFiles/Akinator.dir/other.cpp.obj	ddac40b28bd2d3bc
+4	186	6899199299018190	CMakeFiles/Akinator.dir/main.cpp.obj	f7004bef43de919b
+8	207	6899199080480855	CMakeFiles/Akinator.dir/tree.cpp.obj	bb28063f0d403a92
+195	350	6899199300700402	CMakeFiles/Akinator.dir/text.cpp.obj	5e3d5bcc3087ef5a
+351	520	6899199302349527	Akinator.exe	5b8b47324c655c68
+7	358	6903392596503227	build.ninja	54252bc71587ef27
+186	345	6899199300660348	CMakeFiles/Akinator.dir/akinator.cpp.obj	141dd0c74c7a87a5
+17	200	6899199299075620	CMakeFiles/Akinator.dir/node.cpp.obj	60c38661717b96b2
+11	194	6899199299043555	CMakeFiles/Akinator.dir/debug.cpp.obj	daeddab638466c93
