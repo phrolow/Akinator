@@ -69,13 +69,13 @@ int Akinator(tree *tree);
 
 void AkinatorExtend(node *replaced_node);
 
-node* InputNode();
+node* InputNode(tree *tree);
 
 void Define(node *def_node);
 
-void Definitor(tree *tree);
+int Definitor(tree *tree);
 
-void Comparator(tree *tree);
+int Comparator(tree *tree);
 
 void Start(tree *tree);
 

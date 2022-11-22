@@ -1,7 +1,7 @@
 #include "akinator.h"
 
 int ask() {
-    int ans;
+    int ans = EOF;
 
     do {
         ans = getchar();
@@ -16,6 +16,8 @@ int ask() {
 }
 
 void Start(tree *tree) {
+    int choice = 0;
+
     do {
         printf("Hey, what d'you want? We have:\n");
         printf("1. Akinator\n");
@@ -23,10 +25,15 @@ void Start(tree *tree) {
         printf("3. Comparator\n");
         printf("Press number to continue or any other key to exit\n");
 
-        switch (getchar()) {
+        choice = 0;
+        scanf("%d", &choice);
+
+        fflush(stdin);
+
+        switch (choice) {
             case 1:
                 Akinator(tree);
-                breal;
+                break;
             case 2:
                 Definitor(tree);
                 break;

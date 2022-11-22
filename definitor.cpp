@@ -11,26 +11,27 @@ void Define(node *def_node) {
         if(def_node->side == NO)
             printf("not ");
 
-        printf("%s;");
+        printf("%s;", current->state);
 
         current = current->parent;
     }
 }
 
-void Definitor(tree *tree) {
-    char *buf = (char*)calloc(BUFSIZE, sizeof(char));
+int Definitor(tree *tree) {
     node *def_node = NULL;
 
     printf("What d'you want to define?\n");
 
-    scanf("%s", buf);
-
-    def_node = FindNode(tree, buf);
+    def_node = InputNode(tree);
 
     if(def_node) {
         Define(def_node);
     }
     else {
-        printf("%s not found :(\n");
+        return 1;
     }
+
+    printf("\n");
+
+    return ALL_RIGHT;
 }

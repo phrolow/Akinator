@@ -18,8 +18,7 @@ static node **path(node *term_node, int *pathlen) {
     current = term_node;
 
     for(int i = 0; i < level; i++) {
-        path[i] = current->parent;
-
+        path[i] = current;
         current = current->parent;
     }
 
@@ -29,17 +28,18 @@ static node **path(node *term_node, int *pathlen) {
 }
 
 static void printfirstn(node **path, int n) {
-    printf("%s ", path[0]);
+    printf("%s", path[0]->state);
 
-    for(int i = 1; i < n; i++) {
+    for(int i = 0; i < n; i++) {
         printf(" is ");
 
         if(path[i]->side == NO) {
             printf("not ");
         }
 
-        printf("%s;", path[i]->state);
+        printf("%s;", path[i]->parent->state);
     }
+    printf("\n");
 }
 
 static void compare(node *node1, node *node2) {
@@ -56,24 +56,29 @@ static void compare(node *node1, node *node2) {
     path1 = path(node1, &len1);
     path2 = path(node2, &len2);
 
-    i1 = len1--;
-    i2 = len2--;
+    i1 = --len1;
+    i2 = --len2;
 
-    //дальше будешь долго дебажить пизда
-
-    while(i1-- && i2--) {
-        if(path1[i1] != path2[i2]) {
-            break;
-        }
-    }
+    while(!strcmp(path1[i1]->state, path2[i2]->state) && i1-- && i2--);
 
     printf("The differences between %s and %s are:\n", node1->state, node2->state);
 
-    printfirstn(path1, i1);
-    printfirstn(path2, i2);
+    printfirstn(path1, i1 + 1);
+    printfirstn(path2, i2 + 1);
 }
 
-void Comparator(tree *tree) {
-    node *node1 = InputNode();
-    node *node2 = InputNode();
+int Comparator(tree *tree) {
+    printf("Input first object:\n");
+    node *node1 = InputNode(tree);
+
+    printf("Input second object:\n");
+    node *node2 = InputNode(tree);
+
+    if(!(node1 && node2)) {
+        return 1;
+    }
+
+    compare(node1, node2);
+
+    return ALL_RIGHT;
 }

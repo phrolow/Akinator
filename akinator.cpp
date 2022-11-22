@@ -7,7 +7,7 @@ int Akinator(tree *tree) {
     current = tree->root;
 
     do {
-        printf("\n%s? [Y/N]\n", current->state);
+        printf("%s? [Y/N]\n", current->state);
 
         if(ask()) {
             if (!current->children[YES])
@@ -19,7 +19,7 @@ int Akinator(tree *tree) {
             if (!current->children[NO]) {
                 AkinatorExtend(current);
 
-                current = current->parent;
+                break;
             }
 
             current = current->children[NO];

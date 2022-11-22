@@ -87,6 +87,8 @@ void SaveTree(tree *tree, const char *path) {
     fp = fopen(path, "w");
 
     savenode_(tree->root, fp, 0);
+
+    fclose(fp);
 }
 
 static node* findnode_(node *current, const char *state) {
@@ -107,6 +109,19 @@ node *FindNode(tree *tree, const char *state) {
     return findnode_(tree->root, state);
 }
 
-node* InputNode() {
+node* InputNode(tree *tree) {
+    char *buf;
+    node *nod;
 
+    buf = (char*) calloc(BUFSIZE, sizeof(char));
+
+    gets(buf);
+
+    nod = FindNode(tree, buf);
+
+    if(!nod) {
+        printf("Node \"%s\" not found\n", buf);
+    }
+
+    return nod;
 }
