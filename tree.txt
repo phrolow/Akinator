@@ -4,7 +4,11 @@
 		{ "c" }
 		{ "hz" 
 			{ "d" }
-			{ "Shustik" }
+			{ "tvoya" 
+				{ "Shustik" }
+				{ "mamka" }
+
+			}
 
 		}
 

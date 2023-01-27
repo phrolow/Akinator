@@ -1,3 +1,0 @@
-Y:/gthb/Akinator/cmake-build-debug/CMakeFiles/Akinator.dir
-Y:/gthb/Akinator/cmake-build-debug/CMakeFiles/edit_cache.dir
-Y:/gthb/Akinator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
