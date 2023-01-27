@@ -1,4 +1,4 @@
-#include "akinator.h"
+#include "../akinator.h"
 
 int NodeCtor(node *parent, node *node, char *state, int side) {
     node->parent = parent;

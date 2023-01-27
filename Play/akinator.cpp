@@ -1,4 +1,4 @@
-#include "akinator.h"
+#include "../akinator.h"
 
 int Akinator(tree *tree) {
     node *current = NULL;

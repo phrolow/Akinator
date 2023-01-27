@@ -1,4 +1,4 @@
-#include "akinator.h"
+#include "../akinator.h"
 
 void Define(node *def_node) {
     node *current = def_node;

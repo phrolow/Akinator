@@ -1,4 +1,4 @@
-#include "akinator.h"
+#include "../akinator.h"
 
 int ask() {
     int ans = EOF;

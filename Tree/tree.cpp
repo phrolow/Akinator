@@ -1,4 +1,4 @@
-#include "akinator.h"
+#include "../akinator.h"
 
 void TreeCtor(tree *tree, node *root) {
     tree->root = root;

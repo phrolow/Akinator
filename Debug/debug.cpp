@@ -1,4 +1,4 @@
-#include "akinator.h"
+#include "../akinator.h"
 #include "akinator_debug.h"
 
 static void PrintNode(const node *node, const size_t *nNode, const char color[COLORLEN], FILE *fp) {

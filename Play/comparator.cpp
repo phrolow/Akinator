@@ -1,4 +1,4 @@
-#include "akinator.h"
+#include "../akinator.h"
 
 static node **path(node *term_node, int *pathlen) {
     int     level = 1;

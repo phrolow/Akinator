@@ -3,4 +3,4 @@ project(Akinator)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Akinator main.cpp other.cpp tree.cpp node.cpp akinator.cpp text.cpp debug.cpp definitor.cpp comparator.cpp)
+add_executable(Akinator main.cpp Play/other.cpp Tree/tree.cpp Tree/node.cpp Play/akinator.cpp text.cpp Debug/debug.cpp Play/definitor.cpp Play/comparator.cpp)

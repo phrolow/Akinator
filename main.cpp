@@ -1,5 +1,5 @@
 #include "akinator.h"
-#include "akinator_debug.h"
+#include "Debug/akinator_debug.h"
 
 int main(int argc, char **argv) {
     if(!argc) {
