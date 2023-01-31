@@ -8,13 +8,14 @@ void Define(node *def_node) {
     while(current->parent) {
         printf(" is ");
 
-        if(def_node->side == NO)
+        if(current->side == NO) {
             printf("not ");
-
-        printf("%s;", current->state);
+        }
 
         current = current->parent;
-    }
+
+        printf("%s;", current->state);
+        }
 }
 
 int Definitor(tree *tree) {
